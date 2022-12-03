@@ -11,5 +11,12 @@ namespace FullStack.API.Data
         }
 
         public DbSet<Game> Games { get; set; }
+
+        public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
+        {
+            modelbuilder.Entity<User>().ToTable("users");
+        }
     }
 }

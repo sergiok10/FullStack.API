@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "M98OhN0/RK78B+EswGL23N1OYEbFaGl7DARy6n7NDUlK6JlGlZQouppz9lVoLWgsFEYRDg0HWSc4sh0vme+VSQ==",
+  "dgSpecHash": "Xxi6PZ8osbIVMBYA7xZEn9VxJYOMOf2SQ8/doFuzk1uWVZutv0Cobae4ZMafWq3iD37SGUajnpj1fwCYZPRRag==",
   "success": true,
   "projectFilePath": "E:\\Sergio\\AUB\\CMPS 278\\FullStack.API\\FullStack.API\\FullStack.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.11\\microsoft.aspnetcore.authentication.jwtbearer.6.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

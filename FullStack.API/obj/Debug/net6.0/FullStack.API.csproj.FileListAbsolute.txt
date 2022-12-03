@@ -80,3 +80,4 @@ E:\Sergio\AUB\CMPS 278\FullStack.API\FullStack.API\obj\Debug\net6.0\refint\FullS
 E:\Sergio\AUB\CMPS 278\FullStack.API\FullStack.API\obj\Debug\net6.0\FullStack.API.pdb
 E:\Sergio\AUB\CMPS 278\FullStack.API\FullStack.API\obj\Debug\net6.0\FullStack.API.genruntimeconfig.cache
 E:\Sergio\AUB\CMPS 278\FullStack.API\FullStack.API\obj\Debug\net6.0\ref\FullStack.API.dll
+E:\Sergio\AUB\CMPS 278\FullStack.API\FullStack.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
