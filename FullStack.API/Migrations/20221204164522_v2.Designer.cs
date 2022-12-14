@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FullStack.API.Migrations
 {
     [DbContext(typeof(FullStackDbContext))]
-    [Migration("20221203120419_v2")]
+    [Migration("20221204164522_v2")]
     partial class v2
     {
         /// <inheritdoc />
@@ -66,6 +66,9 @@ namespace FullStack.API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Token")

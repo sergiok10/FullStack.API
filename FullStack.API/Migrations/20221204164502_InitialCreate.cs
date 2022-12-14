@@ -1,19 +1,30 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace FullStack.API.Migrations
 {
     /// <inheritdoc />
-    public partial class v2 : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "ImgURL",
-                table: "Games",
-                newName: "Imgurl");
+            migrationBuilder.CreateTable(
+                name: "Games",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Platform = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Imgurl = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Games", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "users",
@@ -26,6 +37,7 @@ namespace FullStack.API.Migrations
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Token = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -38,12 +50,10 @@ namespace FullStack.API.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "users");
+                name: "Games");
 
-            migrationBuilder.RenameColumn(
-                name: "Imgurl",
-                table: "Games",
-                newName: "ImgURL");
+            migrationBuilder.DropTable(
+                name: "users");
         }
     }
 }
